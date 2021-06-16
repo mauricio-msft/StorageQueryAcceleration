@@ -16,37 +16,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //reference:https://docs.microsoft.com/en-us/dotnet/api/overview/azure/Storage.Blobs-readme?view=azure-dotnet
 
-
-
-            // Get a connection string to our Azure Storage account. You can
-            // obtain your connection string from the Azure Portal (click
-            // Access Keys under Settings in the Portal Storage account blade)
-            // or using the Azure CLI with:
-            //
-            // az storage account show-connection-string --name <account_name> --resource-group <resource_group>
-            //
-            // And you can provide the connection string to your application
-            // using an environment variable.
-
-
-
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=sa2105190040002809;AccountKey=K3sKG7LwqELpdeTEEdifQygPvP+q9vGIfefeIqHV80GqKTspviWBsilGIbIFlM/aNy4yR92+XQBd7fcaEhUQyA==;EndpointSuffix=core.windows.net";
+            string connectionString = "xxxxxxxxxxxxxxxxxxx";
             string containerName = "containersa2105190040002809";
             string blobName = "sa2105190040002809.csv";
 
-
-
             // Get a reference to a container named "sample-container" and then create it
             BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
-            //container.Create();
-
-
-
-            // Get a reference to a blob named "sample-file" in a container named "sample-container"
-            //BlobClient blob0 = container.GetBlobClient(blobName);
-            // This transfers data in the file to the blob on the service.
 
             BlockBlobClient blob = container.GetBlockBlobClient(blobName);
 
