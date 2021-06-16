@@ -3,9 +3,14 @@
 ## Packages used
 
 ```cli
-dotnet add Azure.Storage.Blobs --version 12.9.0
+dotnet add Azure.Storage.Blobs --version 12.8.4
 dotnet add CsvHelper --version 27.1.0
 ```
+
+>If use package Azure.Storage.Blobs --version 12.9.0 then the entire sample breaks, this issue is already reported here:
+[Issue 76856](https://github.com/MicrosoftDocs/azure-docs/issues/76856)
+
+## Prepare solution
 
 In order to run this sample, you need to update the following lines in Program.cs:
 
