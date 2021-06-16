@@ -18,8 +18,8 @@ namespace ConsoleApp1
         {
 
             string connectionString = "xxxxxxxxxxxxxxxxxxx";
-            string containerName = "containersa2105190040002809";
-            string blobName = "sa2105190040002809.csv";
+            string containerName = "xxxxxxxxxxxxxxxxxxx";
+            string blobName = "xxxxxxxxxxxxxxxxxxx.csv";
 
             // Get a reference to a container named "sample-container" and then create it
             BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
